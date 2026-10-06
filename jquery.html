@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LumiCup | jQuery</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo-header">
+        <img src="img/Logo LumiCup con brillo neón.png" alt="Logo LumiCup">
+    </div>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="javascript.html">JavaScript</a>
+        <a href="jquery.html" class="activo">jQuery</a>
+        <a href="json.html">JSON</a>
+        <a href="hosting.html">Hosting y Dominios</a>
+        <a href="cuestionario.html">Cuestionario Web</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+<section class="pagina-titulo">
+
+    <p class="etiqueta">PÁGINA 2</p>
+
+    <h1>jQuery</h1>
+
+    <p>
+        Una librería de JavaScript creada para simplificar determinadas
+        tareas comunes del desarrollo web.
+    </p>
+
+</section>
+
+
+<section class="seccion">
+
+    <h2>¿Qué es jQuery?</h2>
+
+    <p>
+        jQuery es una librería de JavaScript diseñada para facilitar
+        tareas frecuentes del desarrollo web, como seleccionar elementos
+        del documento, manipular el DOM, manejar eventos, realizar
+        animaciones y trabajar con solicitudes Ajax.
+    </p>
+
+    <p>
+        jQuery nació en 2006, cuando los desarrolladores tenían que
+        enfrentarse a diferencias entre navegadores y a tareas de
+        manipulación del DOM que podían requerir bastante código.
+        La librería buscó simplificar estas operaciones mediante una
+        sintaxis más corta y consistente.
+    </p>
+
+</section>
+
+
+<section class="seccion">
+
+    <h2>Sintaxis básica: $</h2>
+
+    <p>
+        Uno de los elementos más reconocibles de jQuery es el símbolo
+        <strong>$</strong>. Normalmente se utiliza para seleccionar
+        elementos y ejecutar métodos sobre ellos.
+    </p>
+
+<pre><code>$("#elemento").hide();
+
+$("#elemento").show();
+
+$("#elemento").slideToggle();</code></pre>
+
+    <p>
+        En estos ejemplos, <code>$()</code> permite seleccionar un
+        elemento mediante un selector similar al utilizado por CSS.
+    </p>
+
+</section>
+
+
+<section class="seccion">
+
+    <h2>JavaScript Vanilla vs jQuery</h2>
+
+    <p>
+        La siguiente tabla muestra una misma idea escrita utilizando
+        JavaScript moderno y jQuery.
+    </p>
+
+
+    <table class="tabla">
+
+        <thead>
+
+            <tr>
+                <th>Función</th>
+                <th>JavaScript Vanilla</th>
+                <th>jQuery</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>Seleccionar un elemento</td>
+
+                <td>
+<pre><code>document.querySelector("#caja");</code></pre>
+                </td>
+
+                <td>
+<pre><code>$("#caja");</code></pre>
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Ocultar</td>
+
+                <td>
+<pre><code>elemento.style.display = "none";</code></pre>
+                </td>
+
+                <td>
+<pre><code>$("#caja").hide();</code></pre>
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Mostrar</td>
+
+                <td>
+<pre><code>elemento.style.display = "block";</code></pre>
+                </td>
+
+                <td>
+<pre><code>$("#caja").show();</code></pre>
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Mostrar/Ocultar con animación</td>
+
+                <td>
+<pre><code>elemento.classList.toggle("oculto");</code></pre>
+                </td>
+
+                <td>
+<pre><code>$("#caja").slideToggle();</code></pre>
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+
+<section class="seccion">
+
+    <h2>Ventajas y desventajas</h2>
+
+
+    <div class="dos-columnas">
+
+        <div class="tarjeta">
+
+            <h3>Ventajas de jQuery</h3>
+
+            <ul>
+                <li>Sintaxis corta para muchas tareas.</li>
+                <li>Facilita determinadas manipulaciones del DOM.</li>
+                <li>Incluye métodos sencillos para efectos y animaciones.</li>
+                <li>Fue útil para reducir problemas de compatibilidad entre navegadores.</li>
+                <li>Existe una gran cantidad de proyectos antiguos que todavía lo utilizan.</li>
+            </ul>
+
+        </div>
+
+
+        <div class="tarjeta">
+
+            <h3>Desventajas de jQuery</h3>
+
+            <ul>
+                <li>Agrega una dependencia externa al proyecto.</li>
+                <li>Muchas tareas que antes requerían jQuery ahora pueden realizarse con JavaScript moderno.</li>
+                <li>Puede ser innecesario para proyectos pequeños.</li>
+                <li>Los desarrolladores actuales pueden preferir APIs nativas del navegador.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="seccion">
+
+    <h2>Efectos y animaciones de jQuery</h2>
+
+    <h3>fadeIn()</h3>
+
+    <p>
+        El método <code>fadeIn()</code> permite mostrar progresivamente
+        un elemento que estaba oculto.
+    </p>
+
+    <button id="botonFade" class="boton">
+        Mostrar LumiCup
+    </button>
+
+    <div id="cajaFade" class="efecto-box">
+        ✨ LumiCup apareció utilizando fadeIn()
+    </div>
+
+
+    <h3>slideToggle()</h3>
+
+    <p>
+        El método <code>slideToggle()</code> alterna la visibilidad de
+        un elemento mediante una animación de desplazamiento.
+    </p>
+
+    <button id="botonSlide" class="boton">
+        Mostrar / ocultar información
+    </button>
+
+    <div id="cajaSlide" class="efecto-box">
+        LumiCup combina diseño, personalización y tecnología.
+    </div>
+
+</section>
+
+
+<section class="seccion bibliografia">
+
+    <h2>Recursos y bibliografía</h2>
+
+    <ul>
+
+        <li>
+            Sitio oficial de jQuery
+        </li>
+
+        <li>
+            jQuery API Documentation
+        </li>
+
+        <li>
+            W3Schools - jQuery
+        </li>
+
+    </ul>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <img src="img/Logo LumiCup con brillo neón.png" alt="LumiCup">
+
+    <p>Proyecto educativo de desarrollo web | jQuery</p>
+
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+
+$(document).ready(function() {
+
+    $("#botonFade").click(function() {
+        $("#cajaFade").fadeIn(800);
+    });
+
+    $("#botonSlide").click(function() {
+        $("#cajaSlide").slideToggle();
+    });
+
+});
+
+</script>
+
+</body>
+</html>

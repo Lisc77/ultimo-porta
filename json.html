@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LumiCup | JSON</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+
+<body>
+
+<header>
+
+    <div class="logo-header">
+
+        <img src="img/Logo LumiCup con brillo neón.png" alt="Logo LumiCup">
+
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">Inicio</a>
+
+        <a href="javascript.html">JavaScript</a>
+
+        <a href="jquery.html">jQuery</a>
+
+        <a href="json.html" class="activo">JSON</a>
+
+        <a href="hosting.html">Hosting y Dominios</a>
+
+        <a href="cuestionario.html">Cuestionario Web</a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+
+<section class="pagina-titulo">
+
+    <p class="etiqueta">PÁGINA 3</p>
+
+    <h1>JSON</h1>
+
+    <p>
+        JavaScript Object Notation para representar e intercambiar
+        información estructurada.
+    </p>
+
+</section>
+
+
+<section class="seccion">
+
+    <h2>¿Qué es JSON?</h2>
+
+    <p>
+        JSON significa <strong>JavaScript Object Notation</strong>.
+        Es un formato de texto utilizado para representar datos
+        estructurados y facilitar el intercambio de información entre
+        diferentes sistemas.
+    </p>
+
+    <p>
+        JSON es muy utilizado en aplicaciones web porque es relativamente
+        sencillo de leer y escribir tanto para personas como para
+        programas. Es común encontrarlo en las respuestas y solicitudes
+        de APIs.
+    </p>
+
+</section>
+
+
+<section class="seccion">
+
+    <h2>Estructura básica de JSON</h2>
+
+    <h3>Pares clave-valor</h3>
+
+    <p>
+        La información se organiza mediante pares de
+        <strong>clave y valor</strong>.
+    </p>
+
+<pre><code>{
+    "nombre": "LumiCup",
+    "precio": 12.99
+}</code></pre>
+
+
+    <h3>Objetos</h3>
+
+    <p>
+        Un objeto JSON se representa mediante llaves
+        <code>{ }</code> y contiene propiedades en forma de
+        pares clave-valor.
+    </p>
+
+
+    <h3>Arreglos</h3>
+
+    <p>
+        Los arreglos permiten almacenar varios valores y se representan
+        mediante corchetes <code>[ ]</code>.
+    </p>
+
+<pre><code>{
+    "colores": [
+        "rosa",
+        "morado",
+        "celeste"
+    ]
+}</code></pre>
+
+</section>
+
+
+<section class="seccion">
+
+    <h2>Objeto JavaScript vs cadena JSON</h2>
+
+
+    <div class="dos-columnas">
+
+        <div class="codigo-card">
+
+            <h3>Objeto JavaScript</h3>
+
+<pre><code>const producto = {
+    nombre: "LumiCup",
+    precio: 12.99,
+    disponible: true
+};</code></pre>
+
+        </div>
+
+
+        <div class="codigo-card">
+
+            <h3>Cadena JSON</h3>
+
+<pre><code>{
+    "nombre": "LumiCup",
+    "precio": 12.99,
+    "disponible": true
+}</code></pre>
+
+        </div>
+
+    </div>
+
+
+    <div class="explicacion">
+
+        <p>
+            Aunque visualmente pueden parecer similares, existe una
+            diferencia importante: un objeto JavaScript es un objeto que
+            el lenguaje puede manipular directamente, mientras que JSON
+            es un formato de texto utilizado para representar datos.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="seccion">
+
+    <h2>Convertir un objeto JavaScript a JSON</h2>
+
+    <p>
+        JavaScript proporciona <code>JSON.stringify()</code> para
+        convertir un objeto JavaScript en una cadena JSON.
+    </p>
+
+
+<pre><code>const producto = {
+    nombre: "LumiCup",
+    precio: 12.99
+};
+
+const datosJSON = JSON.stringify(producto);</code></pre>
+
+
+    <button id="mostrarJSON" class="boton">
+        Convertir LumiCup a JSON
+    </button>
+
+
+    <pre id="resultadoJSON" class="resultado-json"></pre>
+
+</section>
+
+
+<section class="seccion">
+
+    <h2>¿Cómo utiliza JSON una aplicación web?</h2>
+
+    <p>
+        Las aplicaciones web pueden utilizar JSON para intercambiar
+        información entre el navegador y un servidor o una API.
+    </p>
+
+
+    <div class="flujo">
+
+        <div class="flujo-item">
+            <strong>1</strong>
+            <span>Usuario utiliza la aplicación</span>
+        </div>
+
+        <div class="flecha">↓</div>
+
+        <div class="flujo-item">
+            <strong>2</strong>
+            <span>La aplicación solicita datos</span>
+        </div>
+
+        <div class="flecha">↓</div>
+
+        <div class="flujo-item">
+            <strong>3</strong>
+            <span>Servidor o API procesa la solicitud</span>
+        </div>
+
+        <div class="flecha">↓</div>
+
+        <div class="flujo-item">
+            <strong>4</strong>
+            <span>El servidor devuelve datos en JSON</span>
+        </div>
+
+        <div class="flecha">↓</div>
+
+        <div class="flujo-item">
+            <strong>5</strong>
+            <span>La aplicación utiliza esos datos</span>
+        </div>
+
+    </div>
+
+
+    <p class="ejemplo-texto">
+        Por ejemplo, una tienda en línea podría solicitar a una API los
+        datos de un producto LumiCup y recibir información como nombre,
+        precio, disponibilidad y colores en formato JSON.
+    </p>
+
+</section>
+
+
+<section class="seccion bibliografia">
+
+    <h2>Recursos y bibliografía</h2>
+
+    <ul>
+
+        <li>
+            MDN Web Docs - JSON
+        </li>
+
+        <li>
+            RFC 8259 - The JavaScript Object Notation (JSON) Data Interchange Format
+        </li>
+
+        <li>
+            W3Schools - JSON
+        </li>
+
+    </ul>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+    <img src="img/Logo LumiCup con brillo neón.png" alt="LumiCup">
+
+    <p>Proyecto educativo de desarrollo web | JSON</p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

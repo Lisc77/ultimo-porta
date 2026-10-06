@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LumiCup | Inicio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo-header">
+        <img src="img/Logo LumiCup con brillo neón.png" alt="Logo LumiCup">
+    </div>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="javascript.html">JavaScript</a>
+        <a href="jquery.html">jQuery</a>
+        <a href="json.html">JSON</a>
+        <a href="hosting.html">Hosting y Dominios</a>
+        <a href="cuestionario.html">Cuestionario Web</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="hero-text">
+            <p class="etiqueta">PRODUCTO INNOVADOR</p>
+
+            <h1>LumiCup</h1>
+
+            <h2>Tu estilo cambia de color.</h2>
+
+            <p>
+                LumiCup es un vaso térmico personalizado que cambia de color
+                dependiendo de la temperatura de la bebida. Su diseño moderno,
+                juvenil y personalizable combina tecnología, creatividad y estilo
+                en un solo producto.
+            </p>
+
+            <a href="#producto" class="boton">Conocer LumiCup</a>
+        </div>
+
+        <div class="hero-logo">
+            <img src="img/Logo LumiCup con brillo neón.png" alt="LumiCup">
+        </div>
+    </section>
+
+
+    <section id="producto" class="seccion">
+        <h2>Identidad de marca y producto</h2>
+
+        <div class="tarjetas">
+
+            <article class="tarjeta">
+                <h3>¿Qué es LumiCup?</h3>
+                <p>
+                    LumiCup es un vaso diseñado para personas que desean
+                    combinar practicidad y personalidad. Su característica
+                    principal es cambiar visualmente de color de acuerdo con
+                    la temperatura de la bebida.
+                </p>
+            </article>
+
+            <article class="tarjeta">
+                <h3>Público objetivo</h3>
+                <p>
+                    Está dirigido principalmente a estudiantes y jóvenes que
+                    buscan productos originales, modernos, llamativos y
+                    personalizables para utilizar durante sus actividades
+                    diarias.
+                </p>
+            </article>
+
+            <article class="tarjeta">
+                <h3>Propuesta de valor</h3>
+                <p>
+                    LumiCup ofrece una experiencia diferente al convertir un
+                    vaso cotidiano en un producto interactivo y personalizado.
+                    Su cambio de color permite relacionar el diseño con la
+                    temperatura de la bebida.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+
+    <section class="seccion">
+        <h2>¿Cómo funciona?</h2>
+
+        <div class="proceso">
+
+            <div class="paso">
+                <span>01</span>
+                <h3>Elige tu bebida</h3>
+                <p>Coloca tu bebida fría, tibia o caliente.</p>
+            </div>
+
+            <div class="paso">
+                <span>02</span>
+                <h3>Observa el vaso</h3>
+                <p>El diseño cambia visualmente según la temperatura.</p>
+            </div>
+
+            <div class="paso">
+                <span>03</span>
+                <h3>Disfruta tu estilo</h3>
+                <p>Personaliza LumiCup y úsalo todos los días.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="seccion">
+        <h2>Identidad visual</h2>
+
+        <p class="centrado">
+            La identidad de LumiCup utiliza colores modernos y juveniles
+            relacionados con creatividad, innovación, energía y frescura.
+        </p>
+
+        <div class="colores">
+
+            <div class="color color-negro">
+                <strong>#000000</strong>
+                <span>Negro</span>
+                <p>
+                    Representa elegancia, modernidad y contraste.
+                    Se utiliza como color base de la identidad.
+                </p>
+            </div>
+
+            <div class="color color-rosa">
+                <strong>#FB5ECB</strong>
+                <span>Rosa / Fucsia</span>
+                <p>
+                    Se relaciona con creatividad, energía y una apariencia
+                    juvenil y llamativa.
+                </p>
+            </div>
+
+            <div class="color color-morado">
+                <strong>#9C45D9</strong>
+                <span>Morado</span>
+                <p>
+                    Transmite creatividad, innovación y originalidad.
+                </p>
+            </div>
+
+            <div class="color color-celeste">
+                <strong>#51CFFA</strong>
+                <span>Celeste</span>
+                <p>
+                    Se relaciona con frescura, tranquilidad y tecnología.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="seccion simulador">
+        <h2>Simulador LumiCup</h2>
+
+        <p>
+            Este simulador demuestra cómo JavaScript puede modificar el
+            comportamiento de una página web.
+        </p>
+
+        <label for="temperatura">
+            Temperatura de la bebida:
+            <strong><span id="valorTemperatura">25</span> °C</strong>
+        </label>
+
+        <input
+            type="range"
+            id="temperatura"
+            min="0"
+            max="60"
+            value="25"
+        >
+
+        <div id="vaso" class="vaso-demo">
+            LumiCup
+        </div>
+
+        <p id="mensajeTemperatura">
+            Temperatura templada.
+        </p>
+    </section>
+
+
+    <section class="seccion">
+        <h2>La tecnología detrás de LumiCup</h2>
+
+        <div class="tarjetas">
+
+            <article class="tarjeta">
+                <h3>JavaScript</h3>
+                <p>
+                    Permite agregar comportamiento e interacción a la página,
+                    como el simulador de temperatura.
+                </p>
+                <a href="javascript.html" class="enlace">Aprender JS →</a>
+            </article>
+
+            <article class="tarjeta">
+                <h3>jQuery</h3>
+                <p>
+                    Permite realizar determinadas manipulaciones y efectos
+                    sobre los elementos de una página de forma sencilla.
+                </p>
+                <a href="jquery.html" class="enlace">Aprender jQuery →</a>
+            </article>
+
+            <article class="tarjeta">
+                <h3>JSON</h3>
+                <p>
+                    Permite representar y transportar información estructurada
+                    entre aplicaciones web y servidores.
+                </p>
+                <a href="json.html" class="enlace">Aprender JSON →</a>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <img src="img/Logo LumiCup con brillo neón.png" alt="LumiCup">
+    <p>Proyecto educativo de desarrollo web | LumiCup</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
+

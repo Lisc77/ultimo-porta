@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LumiCup | JavaScript</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo-header">
+        <img src="img/Logo LumiCup con brillo neón.png" alt="Logo LumiCup">
+    </div>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="javascript.html" class="activo">JavaScript</a>
+        <a href="jquery.html">jQuery</a>
+        <a href="json.html">JSON</a>
+        <a href="hosting.html">Hosting y Dominios</a>
+        <a href="cuestionario.html">Cuestionario Web</a>
+    </nav>
+</header>
+
+
+<main>
+
+<section class="pagina-titulo">
+    <p class="etiqueta">PÁGINA 1</p>
+    <h1>JavaScript Vanilla</h1>
+    <p>
+        El lenguaje que permite agregar comportamiento e interacción
+        a una página web.
+    </p>
+</section>
+
+
+<section class="seccion">
+
+    <h2>¿Qué es JavaScript?</h2>
+
+    <p>
+        JavaScript (JS) es un lenguaje de programación utilizado en el
+        desarrollo web para agregar comportamiento e interactividad a
+        las páginas. Permite responder a acciones del usuario, modificar
+        elementos HTML, cambiar estilos, validar información y actualizar
+        contenido sin tener que modificar manualmente el código HTML.
+    </p>
+
+    <p>
+        JavaScript puede utilizarse directamente en el navegador mediante
+        el motor de JavaScript del navegador. Cuando se utiliza sin
+        librerías o frameworks adicionales se suele hablar de
+        <strong>JavaScript Vanilla</strong>.
+    </p>
+
+</section>
+
+
+<section class="seccion">
+
+    <h2>HTML, CSS y JavaScript</h2>
+
+    <table class="tabla">
+        <thead>
+            <tr>
+                <th>Tecnología</th>
+                <th>Función</th>
+                <th>Ejemplo en LumiCup</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>Define la estructura y el contenido.</td>
+                <td>Crear títulos, botones, imágenes y secciones.</td>
+            </tr>
+
+            <tr>
+                <td>CSS</td>
+                <td>Define la apariencia y el estilo.</td>
+                <td>Colores, tamaños, espacios y diseño.</td>
+            </tr>
+
+            <tr>
+                <td>JavaScript</td>
+                <td>Define el comportamiento y la interacción.</td>
+                <td>Cambiar el color del simulador según la temperatura.</td>
+            </tr>
+        </tbody>
+    </table>
+
+</section>
+
+
+<section class="seccion">
+
+    <h2>Conceptos básicos de JavaScript</h2>
+
+    <div class="tarjetas">
+
+        <article class="tarjeta">
+            <h3>Variables</h3>
+            <p>
+                Las variables permiten almacenar datos que pueden utilizarse
+                durante la ejecución de un programa.
+            </p>
+
+<pre><code>let temperatura = 25;
+const producto = "LumiCup";</code></pre>
+
+        </article>
+
+
+        <article class="tarjeta">
+            <h3>Funciones</h3>
+
+            <p>
+                Una función es un bloque de código que puede ejecutarse
+                cuando se necesita realizar una determinada tarea.
+            </p>
+
+<pre><code>function mostrarMensaje() {
+    alert("Bienvenido a LumiCup");
+}</code></pre>
+
+        </article>
+
+
+        <article class="tarjeta">
+            <h3>Eventos</h3>
+
+            <p>
+                Los eventos permiten responder a acciones realizadas por
+                el usuario, como hacer clic o mover el mouse.
+            </p>
+
+<pre><code>boton.addEventListener("click", function() {
+    alert("Hiciste clic");
+});</code></pre>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="seccion">
+
+    <h2>Eventos: click y hover</h2>
+
+    <p>
+        Un evento <strong>click</strong> ocurre cuando el usuario hace clic
+        sobre un elemento.
+    </p>
+
+    <button id="demoClick" class="boton">
+        Haz clic aquí
+    </button>
+
+    <p id="resultadoClick" class="resultado"></p>
+
+
+    <p>
+        El término <strong>hover</strong> se utiliza normalmente para
+        describir cuando el puntero pasa sobre un elemento. En JavaScript
+        podemos detectar esta interacción mediante eventos como
+        <code>mouseenter</code> y <code>mouseleave</code>.
+    </p>
+
+    <div id="demoHover" class="hover-demo">
+        Pasa el mouse sobre mí
+    </div>
+
+    <p id="resultadoHover" class="resultado"></p>
+
+</section>
+
+
+<section class="seccion">
+
+    <h2>Ejemplo práctico de JavaScript</h2>
+
+    <p>
+        En este ejemplo utilizaremos JavaScript para modificar el color
+        de un elemento dependiendo de la temperatura de una bebida.
+    </p>
+
+
+<pre><code>const temperatura = 8;
+
+const vaso = document.querySelector("#vasoJS");
+
+if (temperatura &lt;= 10) {
+    vaso.style.backgroundColor = "#51CFFA";
+}</code></pre>
+
+
+    <h3>Explicación del código</h3>
+
+    <div class="explicacion">
+
+        <p>
+            <strong>1. const temperatura = 8;</strong><br>
+            Se crea una variable constante llamada temperatura que almacena
+            el valor 8.
+        </p>
+
+        <p>
+            <strong>2. document.querySelector("#vasoJS");</strong><br>
+            JavaScript busca en el documento el elemento que tiene el
+            identificador vasoJS.
+        </p>
+
+        <p>
+            <strong>3. if (temperatura &lt;= 10)</strong><br>
+            Se comprueba si la temperatura es menor o igual a 10 grados.
+        </p>
+
+        <p>
+            <strong>4. vaso.style.backgroundColor</strong><br>
+            JavaScript modifica el color de fondo del elemento.
+        </p>
+
+        <p>
+            <strong>5. "#51CFFA"</strong><br>
+            Es el código hexadecimal del color celeste utilizado en
+            la identidad visual de LumiCup.
+        </p>
+
+    </div>
+
+
+    <div class="ejemplo-js">
+        <div id="vasoJS">LumiCup</div>
+    </div>
+
+</section>
+
+
+<section class="seccion bibliografia">
+
+    <h2>Recursos y bibliografía</h2>
+
+    <ul>
+        <li>
+            MDN Web Docs - Guía de JavaScript
+        </li>
+
+        <li>
+            MDN Web Docs - EventTarget y eventos
+        </li>
+
+        <li>
+            W3Schools - JavaScript
+        </li>
+    </ul>
+
+</section>
+
+</main>
+
+
+<footer>
+    <img src="img/Logo LumiCup con brillo neón.png" alt="LumiCup">
+    <p>Proyecto educativo de desarrollo web | JavaScript</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
